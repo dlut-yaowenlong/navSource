@@ -1,0 +1,22 @@
+{
+  "name": "approuter",
+  "dependencies": {
+    "@sap/approuter": "^20.0.0"
+  },
+  "scripts": {
+    "start": "node node_modules/@sap/approuter/approuter.js"
+  },
+  "destinations": [
+    {
+      "name": "html5-apps-repo-runtime",
+      "url": "https://html5-apps-repo-runtime.cfapps.jp10.hana.ondemand.com",
+      "forwardAuthToken": true
+    },
+    {
+      "name": "srv-api",
+      "url": "~{srv-api/srv-url}",
+      "forwardAuthToken": true
+    }
+  ]
+}
+
