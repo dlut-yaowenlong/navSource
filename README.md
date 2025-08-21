@@ -8,5 +8,5 @@ Inquiry:
 	Steps to Reproduce: 	Click the tile in the HTML5 app → a new window opens → the screen stays white.
 	Expected Result: 	The application screen (e.g., List Report) is displayed correctly.
 
- In the Network tab,metadataとcatalog service returned a 404 error.	
+ In the Network tab,metadata and catalog service returned a 404 error.	
 <img width="2198" height="1652" alt="image" src="https://github.com/user-attachments/assets/4b9f6844-9d0d-4b39-a055-f6c73ca09fa3" />
