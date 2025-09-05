@@ -1,19 +1,23 @@
 {
+  "xsappname": "navSource-dev!t2754",        
+  "tenant-mode": "dedicated",
+  "authorities-inheritance": true,
+
   "scopes": [
-    {
-      "name": "$XSAPPNAME.FullAccess",
-      "description": "Full access to the application"
-    }
+    { "name": "$XSAPPNAME.User", "description": "Default user" },
+    { "name": "$XSAPPNAME.FullAccess", "description": "Full access to the application" }
   ],
+
   "role-templates": [
+    {
+      "name": "User",
+      "description": "Default user",
+      "scope-references": ["$XSAPPNAME.User"]
+    },
     {
       "name": "Administrator",
       "description": "Administrator role with full access",
-      "scope-references": [
-        "$XSAPPNAME.FullAccess"
-      ]
+      "scope-references": ["$XSAPPNAME.FullAccess"]
     }
-  ],
-  "attributes": [],
-  "authorities-inheritance": false
+  ]
 }
